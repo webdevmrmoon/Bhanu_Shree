@@ -9072,6 +9072,19 @@ body.dark .hamburger .line {
 
 
 @media screen and (max-width:768px) {
+    .headerCallMenu {
+        width: 100%;
+        height: 38px;
+        display: inline-block;
+        background: linear-gradient(45deg, #02a459, #00d974);
+        text-align: center;
+        line-height: 40px;
+        border-radius: 30px;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+        position: relative;
+        top: -2px;
+    }
     .collaborationWrapper {
         background: url(../img/bgs/newsletter-bg.png);
         background-size: cover;
@@ -9198,7 +9211,12 @@ body.dark .hamburger .line {
         margin-bottom: 20px;
     }
     .headerRightMenuWrap {
-        display: none;
+        position: fixed;
+        bottom: 10px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        width: 100%;
     }
     .headerRightMenuWrap.mobile {
         display: block;
@@ -9244,7 +9262,7 @@ body.dark .hamburger .line {
         justify-content: space-between;
     }
     .headerRightMenu li {
-        width: 49%;
+        width: 100%;
     }
     .headerRightMenuWrap.mobile .headerRightMenu .defaultBtn a, .headerRightMenuWrap.mobile .headerRightMenu .defaultBtn button {
         width: 100%;
@@ -9314,15 +9332,22 @@ body.dark .hamburger .line {
 
     .defaultBtn.light2 a {
         height: 38px;
-        padding: 8px 11px;
+        padding: 6px 11px;
+        width: 100%;
     }
 
     .headerRightMenu .defaultBtn a,
     .headerRightMenu .defaultBtn button {
         height: 38px;
         padding: 8px 11px;
+        width: 100%;
     }
-
+    .scrollToTop {
+        bottom: 64px;
+    }
+    #whatsapp {
+        top: 70%;
+    }
     .headerRightMenu .defaultBtn a i,
     .headerRightMenu .defaultBtn button i {
         margin: 0px;

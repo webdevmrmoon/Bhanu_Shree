@@ -854,6 +854,7 @@ p {
     min-height: 200px;
     background: linear-gradient(83deg, #fff4de59, #ffe1e1ab), url(../img/bgs/inner-bnr-bg.png);
     background-size: 100%;
+    padding-top: 80px;
 
 }
 
@@ -1590,7 +1591,6 @@ p {
 }
 
 .bg-1 {
-    background-image: url(../img/bgs/main-texture.webp);
     background-size: cover;
     background-color: #faf3e13b;
     background-blend-mode: color;
@@ -1968,7 +1968,7 @@ p {
 
 
 .actions {
-    background: linear-gradient(180deg, #ffe3d8cf, #fff2d1d1), url(../img/bgs/main-texture.webp);
+    background: linear-gradient(180deg, #ffe3d8cf, #fff2d1d1);
     background-size: 100%;
     background-blend-mode: darken;
 }
@@ -2004,7 +2004,7 @@ p {
 .prListCard {
     border-bottom: none;
     padding: 36px 20px 30px 20px;
-    background: linear-gradient(45deg, #ffffffde, #fdfdfddb), url(../img/bgs/main-texture.webp);
+    background: linear-gradient(45deg, #ffffffde, #fdfdfddb);
     border-radius: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-size: 100%;
@@ -2104,7 +2104,12 @@ p {
 }
 
 
-
+.titleSection.left {
+    width: 100%;
+}
+.titleSection.left  h2::before {
+    display: none;
+}
 .titleSection h2 {
     font-size: 36px;
     font-weight: 500;
@@ -4923,7 +4928,7 @@ p {
 
 
 .foungerSection {
-    background: linear-gradient(45deg, #181828, #181828), url(../img/bgs/main-texture.webp);
+    background: linear-gradient(45deg, #181828, #181828) ;
     background-blend-mode: hard-light;
 }
 
@@ -5763,9 +5768,7 @@ ul.footerSocial i {
     background: #ffffff;
     padding: 25px 30px;
     border-radius: 0px;
-    border: 1px solid #dddddd4a;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border: none;
     position: relative;
 }
 
@@ -5836,7 +5839,7 @@ textarea.form-control {
 
 .right-sidebar-box .custom-form .custom-input .form-control:focus {
     box-shadow: none;
-    border: 1px solid #49c258 !important;
+    border: 1px solid #05a459 !important;
 }
 
 .captcha {
@@ -5867,6 +5870,29 @@ textarea.form-control {
 
 
 /* contact */
+.contactcImg {
+    width: 100%;
+}
+.contactcImg img {
+    width: 100%;
+}
+.contactContent {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+.contactIcon {
+    width: 70px;
+}
+.contactOther {
+    position: relative;
+}
 
 .contactUsCard {
     padding: 25px;
@@ -5950,6 +5976,12 @@ textarea.form-control {
 
 .contactWrapper {
     margin-top: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 110vh;
 }
 
 .contactInfoWrap .row .col-md-12:last-child .contactUsCard {
@@ -6753,7 +6785,7 @@ h5.blgoAuthor {
 
 
 .numerologyCalculator {
-    background: linear-gradient(180deg, #ffffffa8, #ffffffa8), url(../img/bgs/main-texture.webp);
+    background: linear-gradient(180deg, #ffffffa8, #ffffffa8);
     background-size: cover;
     background-position: center;
 }
@@ -6891,20 +6923,20 @@ h5.blgoAuthor {
 .mapSection {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .contactusFromCard {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 20px;
+    border-radius: 0px;
     overflow: hidden;
     background: #fff;
 }
 .contactUsForm {
-    background: linear-gradient(180deg, #ffe3d8cf, #fff2d1d1), url(../img/bgs/main-texture.webp);
+    background: linear-gradient(180deg, #ffe3d8cf, #fff2d1d1) ;
     background-size: 100%;
     background-blend-mode: darken;
 }
 .contactUsForm.ctbg2 {
-    background: linear-gradient(180deg, #ffffffcf, #fffefdd1), url(../img/bgs/main-texture.webp);
+    background: linear-gradient(180deg, #ffffffcf, #fffefdd1);
 }
 .contactUsSection  {
     padding-top: 50px;
@@ -7024,7 +7056,6 @@ h5.blgoAuthor {
     margin-right: 30px;
     margin-left: 30px;
     padding: 10px;
-    background: url(../img/bgs/sample-_1_.webp);
     background-size: 100%;
 }
 
@@ -7144,7 +7175,6 @@ h5.blgoAuthor {
     text-align: right;
 } 
 .methodofTeaching {
-    background: url(../img/bgs/main-texture.webp);
     background-size: cover;
     background-position: center;
 }
@@ -7193,6 +7223,9 @@ h5.blgoAuthor {
     display: none;
 }
 
+.aboutSection.inner {
+    background: #fff;
+}
 
 .aboutSection.valuesSection {
     /* background: linear-gradient(124deg, #f3f4ff, #faf5ff); */
@@ -7241,6 +7274,52 @@ h5.blgoAuthor {
     margin-left: 0px;
 }
 
+
+/* Menu Sidebar */
+.productSideBar.otSidebar {
+    
+}
+.otSidebar {
+    position: sticky;
+    top: 100px;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+.sideHeader {
+    background: linear-gradient(90deg, #ef7407, #db3022);
+    border-bottom: 3px solid #f39242;
+    padding: 10px 21px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.otSidecloser {
+    display: none;
+}
+.otSidebarWrapper {
+    padding: 18px;
+}
+.otSidebar .sideLink {
+    margin: 0px;
+    line-height: normal;
+    font-size: unset;
+}
+.otSidebar .sideLink a {
+    display: block;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-bottom: 1px dashed #dddddd66;
+    border-radius: 20px;
+}
+.sidebar-button.active, .sidebar-button:hover {
+    background: #fff9e9;
+}
+
+.otItemListing .titleSection h2 {
+    font-size: 28px;
+}
 
 /* user panel css*/
 
@@ -7391,7 +7470,7 @@ h5.blgoAuthor {
 }
 
 .ourTeam  {
-    background: linear-gradient(180deg, #fff3eecf, #fff2d1d1), url(../img/bgs/main-texture.webp);
+    background: linear-gradient(180deg, #fff3eecf, #fff2d1d1) ;
     background-size: 100%;
     background-blend-mode: darken;
 }
@@ -7505,7 +7584,6 @@ h5.blgoAuthor {
     color: #fff;
 }
 .gallerySection {
-    background: url(../img/bgs/main-texture.webp);
     background-size: cover;
     background-position: center;
 }
@@ -7872,7 +7950,7 @@ margin-bottom: 10px;
 }
 
 .vastu_content_drop{
-    background:linear-gradient(45deg, #ffffffde, #fdfdfddb), url(../img/bgs/main-texture.webp) !important;
+    background:linear-gradient(45deg, #ffffffde, #fdfdfddb)  !important;
 }
 
 
@@ -7931,7 +8009,12 @@ margin-bottom: 10px;
     height: 18px;
     padding: 1px;
 }
-
+.footer-btm-wrp p.poweredBy {
+    font-size: 10px;
+}
+.footer-btm-wrp p.poweredBy span {
+    font-size: 13px;
+}
 
 
 /* Dark Mode */
@@ -8118,29 +8201,6 @@ body.dark .hamburger .line {
     margin-top: 40px;
 } */
 
-.choose-location-tab-card {
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 20px 0px;
-    text-align: center;
-    /* border: 1px solid #fe9da0; */
-    transition: 0.4s ease;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #ecf1ff, #ecf1ff);
-    box-shadow: rgb(149 157 165 / 9%) 0px 8px 24px;
-    border: 1px solid #e9e9e996;
-    min-height: 224px;
-    border-bottom: 2px solid #263844;
-    position: sticky;
-    top: 100px;
-}
-
-.choose-location-tab-card:hover {
-    background: linear-gradient(90deg, #e4e5ff, #f5f5ff);
-    background-position: center center;
-    background-repeat: no-repeat;
-    transition: 0.4s ease;
-}
 
 .choose-location-tab-card h5 {
     color: #263844;
@@ -8166,9 +8226,6 @@ body.dark .hamburger .line {
 .choose-location-tab-card a{
     font-size: 15px;
     color: #2e2e2e;
-}
-.choose-location-tab-card img{
-    width: 70px;
 }
 /*  */
 
@@ -9230,11 +9287,7 @@ body.dark .hamburger .line {
         gap: 7px;
         justify-content: center;
     }
-    .numerologyCalculator {
-        background: linear-gradient(180deg, #ffffffa8, #ffffffa8), url(../img/bgs/main-texture.webp);
-        background-size: cover;
-        background-position: center;
-    }
+   
     #twoDigitResult {
         margin-top: 10px;
         text-align: center;
@@ -10236,11 +10289,11 @@ body.dark .hamburger .line {
         min-height: fit-content;
     }
     .foungerSection.aboutbg {
-        background: linear-gradient(45deg, #181828, #181828), url(../img/bgs/main-texture.webp);
+        background: linear-gradient(45deg, #181828, #181828);
          background-blend-mode: hard-light;
     }
     .aboutbg {
-        background: linear-gradient(180deg, #ffffff8c, #ffffffa6), url(../img/bgs/main-texture.webp);
+        background: linear-gradient(180deg, #ffffff8c, #ffffffa6);
         background-size: cover;
         background-position: center;
     }
@@ -10260,12 +10313,7 @@ body.dark .hamburger .line {
     .submitandclear {
         justify-content: center;
     }
-    .bg-1 {
-        background-image: url(../img/bgs/main-texture.webp);
-        background-size: cover;
-        background-color: #faf3e1d6;
-        background-blend-mode: color;
-    }
+ 
     .bannerContent h5 {
         font-size: 18px;
         text-align: center;
